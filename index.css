@@ -1,0 +1,32 @@
+/* navbar logo and title related styles */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  color: black;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+.title > span,
+.home {
+  color: orangered;
+}
+
+/* Navbar links related styles */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar {
+  width: 1320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
