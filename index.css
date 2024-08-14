@@ -21,12 +21,139 @@
   align-items: center;
   gap: 20px;
 }
-
 .navbar {
-  width: 1320px;
+  width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+}
+.three-dot {
+  display: none;
+  cursor: pointer;
+}
+
+/* Explore Travel section related styles */
+.explore-section {
+  width: 1170px;
+  height: 500px;
+  background-image: url("/Images/Group13.png");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.explore-title {
+  color: white;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.explore-description {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  width: 676px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/* search form related styles */
+.search-form {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 65%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-query {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.search-btn {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: orangered;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Navbar related styles */
+  .navbar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .links {
+    display: none;
+  }
+  .three-dot {
+    display: block;
+    margin-right: 30px;
+  }
+  /* Adjust the explore section for mobile */
+  .explore-section {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    padding: 20px 10px;
+  }
+
+  .explore-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .explore-description {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  /* Adjust the search form for mobile */
+  .search-form {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-query {
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .search-btn {
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+  }
 }
